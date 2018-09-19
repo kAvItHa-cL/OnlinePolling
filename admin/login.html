@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Online Voting</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="../assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="../assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../assets/plugins/animate.css">
+    <link rel="stylesheet" href="../assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/plugins/parallax-slider/css/parallax-slider.css">
+    <link rel="stylesheet" href="../assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>	
+
+<body>
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img src="../assets/img/a.png" alt="Logo">
+            </a>
+            <!-- End Logo -->
+            
+            <!-- Topbar -->
+            <div class="topbar">
+                <ul class="loginbar pull-right">
+                    <!--<li><a href="page_login.html">Login</a></li> -->  
+                </ul>
+            </div>
+            <!-- End Topbar -->
+
+          
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <!-- Home -->
+                    <li class="">
+                        <a href="/online_voting/index.php" class="">
+                            Home
+                        </a>
+                    </li>
+                    <!-- End Home -->
+					<li class="">
+                        <a href="admin/login.html" class="" >
+                            Admin Login
+                        </a>
+                    </li>
+					<li class="">
+                        <a href="/online_voting/login.html" class="" >
+                            User Login
+                        </a>
+                    </li>
+					<li class="">
+                        <a href="/online_voting/registeracc.php" class="" >
+                            User Registration
+                        </a>
+                    </li>
+					
+					<li class="">
+                        <a href="/online_voting/about.html" class="" >
+                            About
+                        </a>
+                    </li>
+
+                    
+
+                    
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    </div>
+    <!--=== End Header ===-->
+	
+	
+	  <!--=== Content Part ===-->
+    <div class="container content">		
+    	<div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                <form class="reg-page" action="checklogin.php" onsubmit="return loginValidate(this)" method="post">
+                    <div class="reg-header">            
+                        <h2>Administrator Login</h2>
+                    </div>
+
+                    <div class="input-group margin-bottom-20">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" placeholder="Email" class="form-control"  name="myusername" id="myusername" required="required">
+                    </div>                    
+                    <div class="input-group margin-bottom-20">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" placeholder="Password" class="form-control" name="mypassword" id="mypassword" required="required">
+                    </div>                    
+
+                    <div class="row">
+                       
+                        <div class="col-md-12">
+                            <button class="btn-u pull-right" type="submit name="Submit""> Login</button>                        
+                        </div>
+                    </div>
+					<div class="reg-header">
+                    </div>
+                </form>            
+            </div>
+        </div><!--/row-->
+    </div><!--/container-->		
+    <!--=== End Content Part ===-->
